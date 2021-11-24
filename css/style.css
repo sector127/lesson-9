@@ -72,6 +72,25 @@
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-weight: 600;
+  position: relative;
+}
+
+.nav li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.nav li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .nav .active a {
