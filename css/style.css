@@ -71,6 +71,10 @@
   margin: 0 0 0 10px;
 }
 
+.burger {
+  display: none;
+}
+
 .breadcrumbs {
   margin: 95px 0 0 140px;
 }
@@ -124,7 +128,7 @@
 }
 
 .category-name {
-  font-size: 14;
+  font-size: 14px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   color: #5863f8;
