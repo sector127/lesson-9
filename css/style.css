@@ -83,13 +83,25 @@
   height: 2px;
   width: 100%;
   background: #fff;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
   transform: scaleX(0);
+  -webkit-transform-origin: right;
+  -ms-transform-origin: right;
   transform-origin: right;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  -o-transition: transform 250ms ease-in;
   transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
 }
 
 .nav li a:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
   transform: scaleX(1);
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
   transform-origin: left;
 }
 
