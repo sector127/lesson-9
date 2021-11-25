@@ -238,7 +238,7 @@
   background: url("../images/section-image.jpg");
   background-size: cover;
   width: 100%;
-  height: 612px;
+  height: auto;
 }
 
 .cards-content {
@@ -281,6 +281,7 @@
   background: #fff;
   width: 260px;
   height: 260px;
+  margin: 0 0 20px 0;
 }
 
 .card-icon {
