@@ -162,7 +162,8 @@
 
 /* section content */
 
-.about-us {
+.about-us,
+.contact-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,4 +318,110 @@
   color: #b1b1b1;
   width: 221px;
   height: 62px;
+}
+
+/* contact page styling */
+.contact-section {
+  flex-direction: column;
+}
+
+.contact-heading {
+  margin: 0 0 50px 140px;
+}
+
+.form-description {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-form {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1088px;
+  width: 100%;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.send-button {
+  width: 352px;
+  height: 60px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  background: #5863f8;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.send-button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.5s ease-in-out;
+}
+
+.send-button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.send-button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+  cursor: pointer;
+}
+
+.send-button:hover svg {
+  transform: translateX(-1.2em) rotate(45deg) scale(1.1);
+}
+
+.send-button:hover span {
+  transform: translateX(-15em);
+}
+
+.send-button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+textarea[type="textarea"] {
+  max-width: 720px;
+  height: 288px;
+  width: 100%;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  background: #f8f8f8;
+  border: 2px solid #e8e8e8;
+}
+
+input[type="text"] {
+  width: 352px;
+  height: 60px;
+  margin: 0 0 16px 0;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  background: #f8f8f8;
+  border: 2px solid #e8e8e8;
 }
