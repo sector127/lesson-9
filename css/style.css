@@ -419,7 +419,7 @@
   }
 }
 
-textarea[type="textarea"] {
+textarea.desc {
   max-width: 720px;
   height: 288px;
   width: 100%;
