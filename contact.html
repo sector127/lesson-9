@@ -54,21 +54,31 @@
         </div>
       </div>
       <div class="breadcrumbs">
-        <h1 class="title">About Us</h1>
+        <h1 class="title">Contact</h1>
         <ul class="breadcrumb-menu">
           <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </header>
     <section class="contact-section">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9980.91864638793!2d43.50238460942054!3d41.94992704662999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sge!4v1637997879195!5m2!1sen!2sge"
+          width="1088"
+          height="286"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
       <div class="contact-heading">
         <h6 class="category-name">CONTACT</h6>
         <h3 class="content-title">Contact us to get free support</h3>
       </div>
       <div class="contact-form">
         <div class="form-description">
-          <form action="">
+          <form action="" method="post" id="contact">
             <textarea
               type="textarea"
               id="description"
@@ -91,12 +101,12 @@
             placeholder="Name / Surname"
           />
           <input
-            type="text"
+            type="email"
             id="e-mail"
             name="e-mail-name"
             placeholder="Email"
           />
-          <button class="send-button">
+          <button type="submit" form="contact" class="send-button">
             <span>Send</span>
             <div class="svg-wrapper-1">
               <div class="svg-wrapper">
@@ -117,6 +127,102 @@
           </button>
         </div>
       </div>
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="far fa-envelope"></i></div>
+          <div class="contact-card-content">
+            <div class="contact-card-title">Email</div>
+            <div class="contact-card-description">
+              <p>example@yahoo.com</p>
+              <p>exampleemail2@yahoo.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+          <div class="contact-card-content">
+            <div class="contact-card-title">Phone</div>
+            <div class="contact-card-description">
+              <p>+0 320 422 4254</p>
+              <p>+0 342 552 523</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-card-content">
+            <div class="contact-card-title">Location</div>
+            <div class="contact-card-description">
+              <p>Main Str Chicago Ilinois</p>
+              <p>Main Street New York City</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-heading">
+        <h6 class="category-name">Photos</h6>
+        <h3 class="content-title">
+          See our latest photos from restaurant and hotel
+        </h3>
+      </div>
+      <div class="bottom-images">
+        <img src="images/bottom-image1.png" alt="bottom-image1" />
+        <img src="images/bottom-image2.png" alt="bottom-image2" />
+        <img src="images/bottom-image3.png" alt="bottom-image3" />
+      </div>
     </section>
+    <footer class="main-footer">
+      <div class="footer-first-row">
+        <div class="footer-about">
+          <div class="logo footer-logo">Zetta Hotels</div>
+          <div class="footer-about-description">
+            Our hotel is an image of quality and profesionalism combined with
+            hard work and precision. You can expect only the best services from
+            our staff.
+          </div>
+          <div class="footer-social-icons">
+            <span class="fb">
+              <a href="https://facebook.com" target="blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </span>
+            <span class="twitter">
+              <a href="https://twitter.com" target="blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </span>
+            <span class="google">
+              <a href="https://twitter.com" target="blank"
+                ><i class="fab fa-google-plus-g"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="footer-menu">
+          <div class="usefull-menu">
+            <div class="footer-menu-title">Usefull Links</div>
+            <ul class="footer-menu-ul">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Rooms</a></li>
+              <li><a href="#">Gift Card</a></li>
+              <li><a href="#">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="privacy-menu">
+            <div class="footer-menu-title">Privacy</div>
+            <ul class="footer-menu-ul">
+              <li><a href="#">Career</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer contact"></div>
+      </div>
+      <div class="copyright"></div>
+    </footer>
   </body>
 </html>
